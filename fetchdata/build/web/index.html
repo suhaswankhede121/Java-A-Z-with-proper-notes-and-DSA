@@ -1,0 +1,63 @@
+<<html>
+    <head>
+        <title> this is fetch data implement</title>
+        <style>
+            .container{
+                width: 40%;
+                border: 1px solid black;
+                font-size:20px;
+                margin: auto;
+                padding: 20px;
+                    
+            }
+            #myform table tr td input{
+                font-size: 20px;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>My form</h1>
+            <form id="myform" action="fetchdata" method="post">
+            <table>
+                
+                <tr>
+                    <td>Enter your Name: </td>
+                    <td><input type="text" name="user_name"></td>
+                </tr><!--  -->
+                
+                <tr><td> Enter Your Password</td>
+                    <td><input type="password" name="user_password"></td>
+                </tr><!-- comment -->
+                
+                <tr><td>Enter your Email: </td>
+                    <td><input type="email" name="user_email"></td>
+                </tr>
+                <tr><td>Select Gender</td>
+                    <td><input type="radio" name="user_gender">Male &nbsp; &nbsp; <input type="radio" name="user_gender" >Female</td>
+                </tr><!-- comment -->
+                
+                <tr> <td> Select course</td>
+                    <td><select name="select_course">
+                           
+                            <option value="java">Java</option>
+                            <option value="python">Python</option><!-- comment -->
+                            <option value="cpp">Cpp</option><!-- comment -->
+                             <option value="C">C</option>
+                        </select>
+                </tr>
+                <tr><td style="text-align:right"> <input type="checkbox" value="checked" name="condition"/></td><!-- comment -->
+                    <td> Agree terms and Condition</td>
+                </tr>
+                <tr><td> </td>
+                    <td><button type="Submit">Register</button>
+                       <button type="Reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        
+
+    </body>
+</html>
